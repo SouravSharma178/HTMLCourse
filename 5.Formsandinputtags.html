@@ -1,0 +1,69 @@
+<!--input tag is used to take input from the user-->
+<!--div tag occupies a separate block within the page,it is a block element-->
+<!--To keep the checkbox checked we will use the checked keyword(line)-->
+<!--Label tag is used to make sure that when we click on a certain text the options get
+activated-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in Html</title>
+</head>
+
+<body>
+    <h2>This is forms tutorial</h2>
+    <!--form tag is used to provide backend to the form-->
+    <form action="backend.php">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="MyName" id="name">
+        </div>
+        <br>
+        <div>
+            Male:<input type="checkbox" name="Male" checked>
+        </div>
+        <br>
+        <div>
+            Email:<input type="email" name="Emails">
+        </div>
+        <br>
+        <br>
+        <div>
+            SelectFile:<input type="file" name="UploadedFiles">
+        </div>
+        <br>
+        <br>
+        <div>
+            Bonus:<input type="number" value="mynumber">
+        </div>
+        <br>
+        <br>
+        <div>
+            Gender:Male<input type="radio" name="mygender">Female:<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            <label for="notes">Notes:</label>
+            <br><textarea name="mytext" id="notes" cols="30" rows="10">
+            </textarea>
+        </div>
+        <br>
+        <br>
+        <div>
+            Car: <select name="" id="car">
+                <option value="Indica">Indica</option>
+                <option value="Swift" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Submit:<input type="submit" value="Submit Now">
+            Reset:<input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>
